@@ -1,4 +1,4 @@
-<!doctype html>
+no<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -120,22 +120,6 @@
     </footer>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function scrollToSection(id){
-      document.getElementById(id).scrollIntoView({behavior:'smooth'});
-    }
-    function fakeSend(e){
-      e.preventDefault();
-      document.getElementById('sent').style.display='block';
-      setTimeout(()=>{document.getElementById('sent').textContent='Demo done — message not actually sent. Use email to contact.'},1200);
-    }
-    function openDemo(which){
-      alert('Demo: '+which+' — frontend preview placeholder. If you want, I can add hosted demos or embed images.');
-    }
-    function showCode(which){
-      alert('Code: '+which+' — repository link placeholder. Main site code is downloadable as index.html');
-    }
-  </script>
+ 
 </body>
 </html>
