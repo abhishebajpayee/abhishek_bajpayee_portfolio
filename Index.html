@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhishek Bajpayee | Cloud & AI Enthusiast</title>
+  <meta name="description" content="Portfolio - Abhishek Bajpayee | Cloud, Generative AI & Power BI" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#7c3aed; --glass: rgba(255,255,255,0.04);
+      --container:1100px; --radius:14px;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071126 0%,#081226 60%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:var(--container);margin:30px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .logo span{font-size:20px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    .lead{color:var(--muted);margin-top:8px}
+    .cta{margin-top:18px}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:white;cursor:pointer;font-weight:600}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:9px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-size:13px}
+    .right-hero{padding:20px;display:flex;flex-direction:column;gap:10px}
+    .summary{color:var(--muted);font-size:14px}
+    /* Projects */
+    .projects{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .proj-title{font-weight:700}
+    .proj-tech{font-size:13px;color:var(--muted);margin-top:8px}
+    .proj-desc{color:var(--muted);font-size:13px;margin-top:10px}
+    .proj-actions{margin-top:12px;display:flex;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+    /* Contact */
+    .contact{margin-top:28px;display:grid;grid-template-columns:1fr 380px;gap:18px}
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:#eaf0ff}
+    textarea{min-height:120px;resize:vertical}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+    /* Responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr} .projects{grid-template-columns:repeat(2,1fr)} .contact{grid-template-columns:1fr}}
+    @media (max-width:600px){.projects{grid-template-columns:1fr} .logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><span>AB</span></div>
+        <div>
+          <div style="font-weight:700">Abhishek Bajpayee</div>
+          <div style="font-size:13px;color:var(--muted)">Cloud & AI Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Hi, I'm Abhishek — Solutions Architect Intern hopeful</h1>
+        <p class="lead">Computer Science graduate passionate about Cloud Computing, Generative AI and ML-driven solutions. I build data dashboards, AI-powered web experiences and cloud-ready prototypes.</p>
+        <div class="cta">
+          <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+          <a href="mailto:abhishekbaajpayee2@gmail.com" class="secondary" style="margin-left:10px">Email Me</a>
+        </div>
+        <div class="skills" style="margin-top:16px">
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Power BI</div>
+          <div class="skill">HTML/CSS/JS</div>
+          <div class="skill">AWS (Basic)</div>
+          <div class="skill">Generative AI</div>
+        </div>
+      </div>
+
+      <aside class="right-hero card">
+        <div style="font-weight:700">Quick Info</div>
+        <div class="summary">B.Tech (CSE) — Babasaheb Ambedkar Technological University (Dec 2023). Seeking internship roles in Cloud, AI & Data Analytics.</div>
+        <div style="margin-top:12px"><span class="chip">Certifications: AWS Solutions Architect Prep</span> <span class="chip">Cognizant Agile Simulation</span></div>
+        <div style="margin-top:12px;font-size:14px;color:var(--muted)">Connect: <a href="https://linkedin.com/in/abhishek-bajpayee-8691" style="color:#bcd3ff;text-decoration:none">linkedin.com/in/abhishek-bajpayee-8691</a></div>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:22px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h2 style="margin:0">Projects</h2>
+        <div style="color:var(--muted);font-size:13px">Featured work — AI & Data</div>
+      </div>
+
+      <div class="projects">
+        <div class="project">
+          <div class="proj-title">AI-Powered E-Shop Webpage</div>
+          <div class="proj-tech">HTML • CSS • Python (recommendation logic)</div>
+          <div class="proj-desc">Mini e-commerce prototype with AI-driven product recommendations and a responsive UI. Implemented basic collaborative filtering for demo recommendations.</div>
+          <div class="proj-actions">
+            <button class="btn" onclick="openDemo('eshop')">Live Demo</button>
+            <a class="secondary" href="#" onclick="showCode('eshop')">View Code</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="proj-title">Sales Data Dashboard</div>
+          <div class="proj-tech">Power BI • SQL</div>
+          <div class="proj-desc">Interactive Power BI dashboard for analysing sales, profit and trends. Includes slicers, KPI cards and drill-through pages.</div>
+          <div class="proj-actions">
+            <button class="btn" onclick="openDemo('powerbi')">Preview</button>
+            <a class="secondary" href="#" onclick="showCode('powerbi')">Details</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="proj-title">Cloud-ready Prototype</div>
+          <div class="proj-tech">AWS (Basics) • Docker</div>
+          <div class="proj-desc">Small web app structured to be deployable on cloud with Docker and simple CI instructions. Focus on scalability and modular design.</div>
+          <div class="proj-actions">
+            <button class="btn" onclick="openDemo('cloud')">Preview</button>
+            <a class="secondary" href="#" onclick="showCode('cloud')">Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="card">
+        <h3 style="margin-top:0">Contact Me</h3>
+        <p style="color:var(--muted)">Send a message — frontend demo only. You can also email me directly.</p>
+        <form id="contactForm" onsubmit="fakeSend(event)">
+          <input id="name" placeholder="Your name" required />
+          <input id="email" type="email" placeholder="Your email" required />
+          <textarea id="message" placeholder="Message" required></textarea>
+          <div style="display:flex;gap:8px">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="button" class="secondary" onclick="window.location='mailto:abhishekbaajpayee2@gmail.com'">Email Direct</button>
+          </div>
+          <div id="sent" style="color:#bff6d6;margin-top:10px;display:none">Message ready — demo only. (Use email to actually send)</div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">Contact & Links</h3>
+        <div style="color:var(--muted);font-size:14px;margin-top:8px">
+          <strong>Email:</strong> abhishekbaajpayee2@gmail.com<br>
+          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abhishek-bajpayee-8691" style="color:#bcd3ff">linkedin.com/in/abhishek-bajpayee-8691</a><br>
+          <strong>Location:</strong> India
+        </div>
+        <div style="margin-top:12px"><span class="chip">Open to internships</span> <span class="chip">Fresher</span></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Abhishek Bajpayee — Built with ❤️ for Cloud & AI roles
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function scrollToSection(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+    }
+    function fakeSend(e){
+      e.preventDefault();
+      document.getElementById('sent').style.display='block';
+      setTimeout(()=>{document.getElementById('sent').textContent='Demo done — message not actually sent. Use email to contact.'},1200);
+    }
+    function openDemo(which){
+      alert('Demo: '+which+' — frontend preview placeholder. If you want, I can add hosted demos or embed images.');
+    }
+    function showCode(which){
+      alert('Code: '+which+' — repository link placeholder. Main site code is downloadable as index.html');
+    }
+  </script>
+</body>
+</html>
